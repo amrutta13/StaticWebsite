@@ -21,4 +21,4 @@ jobs:
 
       - name: Sync website files to S3
         run: |
-          aws s3 sync . s3://amrutta148235152366 --exclude ".git/*"  # Replace with your S3 bucket name
+          aws s3 sync . s3://amrutta08082002 --exclude ".git/*"  # Replace with your S3 bucket name
