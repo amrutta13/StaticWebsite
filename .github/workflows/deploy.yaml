@@ -27,7 +27,7 @@ jobs:
       - name: Sync website files to S3
         run: |
           echo "Syncing files to S3..."
-          aws s3 sync . s3://amrutta08082002 --exclude ".git/*" ----exact-timestamps# Replace with your S3 bucket name
+          aws s3 sync . s3://amrutta08082002 --exclude ".git/*" --exact-timestamps
 
       - name: Verify S3 sync (debugging)
         run: |
